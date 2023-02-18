@@ -513,6 +513,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -538,6 +572,10 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .mx-auto {
@@ -612,6 +650,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -626,6 +668,10 @@ video {
 
 .inline-flex {
   display: inline-flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -859,6 +905,11 @@ video {
   padding: 2rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -899,8 +950,28 @@ video {
   padding-bottom: 2rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .pt-40 {
   padding-top: 10rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .text-center {
@@ -910,6 +981,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-sm {
@@ -995,6 +1071,121 @@ video {
   transition-duration: 500ms;
 }
 
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 450px;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.card-rating {
+  position: absolute;
+  top: 0;
+  background-color: black;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  right: 25px;
+  transform: translateY(-50%);
+  border-radius: 12px;
+  padding: 6px 10px;
+}
+
+.package-container {
+  padding: 20px;
+  height: 100%;
+}
+
+.package-content {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.package-rating {
+  color: yellow;
+  padding-top: 10px;
+}
+
+.itinerary-container {
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.itinerary-heading {
+  padding: 20px;
+}
+
+.itinerary-body {
+  padding: 20px;
+  background-color: white;
+}
+
+.daily-content {
+  padding: 20px;
+}
+
+.city-detail {
+  position: relative;
+  padding-left: 50px;
+  border-left: 1px dotted lightblue;
+}
+
+.city-icon {
+  position: absolute;
+  height: 30px;
+  background-color: lightblue;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  width: 30px;
+  top: 0;
+  left: -13px;
+}
+
+.attraction-detail {
+  position: relative;
+  padding-bottom: 15px;
+  margin-top: 5px;
+  padding-left: 50px;
+}
+
+.dot-line {
+  border-bottom: 1px dotted lightblue;
+  width: 50px;
+  position: absolute;
+  top: 15px;
+  left: -50px;
+}
+
 .hover\:bg-blue-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -1072,6 +1263,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:m-10 {
+    margin: 2.5rem;
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
