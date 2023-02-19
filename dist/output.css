@@ -662,10 +662,6 @@ video {
   height: 1px;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -824,8 +820,8 @@ video {
   --tw-bg-opacity: 0.4;
 }
 
-.bg-\[url\(https\:\/\/images\.unsplash\.com\/photo-1552832230-c0197dd311b5\?ixlib\=rb-1\.2\.1\&ixid\=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\&auto\=format\&fit\=crop\&w\=1592\&q\=80\)\] {
-  background-image: url(https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1592&q=80);
+.bg-\[url\(https\:\/\/d3ne5s9fv9p81l\.cloudfront\.net\/images\/201607051467754001_577c261133c13_watermark_800_800\.jpg\?imageView2\/5\/w\/1000\/h\/560\/format\/auto\)\] {
+  background-image: url(https://d3ne5s9fv9p81l.cloudfront.net/images/201607051467754001_577c261133c13_watermark_800_800.jpg?imageView2/5/w/1000/h/560/format/auto);
 }
 
 .bg-\[url\(https\:\/\/res\.taketours\.com\/images\/640\/Notre-Dame\%20Basilica-Montreal-Canada2\.jpg\)\] {
@@ -838,10 +834,6 @@ video {
 
 .bg-\[url\(https\:\/\/res\.taketours\.com\/images\/71035\.jpg\)\] {
   background-image: url(https://res.taketours.com/images/71035.jpg);
-}
-
-.bg-\[url\(https\:\/\/d3ne5s9fv9p81l\.cloudfront\.net\/images\/201607051467754001_577c261133c13_watermark_800_800\.jpg\?imageView2\/5\/w\/1000\/h\/560\/format\/auto\)\] {
-  background-image: url(https://d3ne5s9fv9p81l.cloudfront.net/images/201607051467754001_577c261133c13_watermark_800_800.jpg?imageView2/5/w/1000/h/560/format/auto);
 }
 
 .bg-\[url\(https\:\/\/th\.bing\.com\/th\/id\/OIP\.zhc2ZfMgKfV68fN3jxywtwHaEo\?w\=269\&h\=180\&c\=7\&r\=0\&o\=5\&dpr\=1\.5\&pid\=1\.7\)\] {
@@ -977,11 +969,6 @@ video {
   line-height: 1rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1030,6 +1017,11 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-orange-700 {
+  --tw-text-opacity: 1;
+  color: rgb(194 65 12 / var(--tw-text-opacity));
+}
+
 .text-violet-800 {
   --tw-text-opacity: 1;
   color: rgb(91 33 182 / var(--tw-text-opacity));
@@ -1043,11 +1035,6 @@ video {
 .text-yellow-300 {
   --tw-text-opacity: 1;
   color: rgb(253 224 71 / var(--tw-text-opacity));
-}
-
-.text-orange-700 {
-  --tw-text-opacity: 1;
-  color: rgb(194 65 12 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -1209,6 +1196,75 @@ img {
   border-radius: 12px;
 }
 
+.package-card {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1fr;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 50%;
+  background-color: hsl(0, 0%, 98%);
+  margin-bottom: 50px;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.card-detail {
+  text-align: center;
+  padding: 40px;
+}
+
+.card-info {
+  background-color: white;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px lightgray;
+  gap: 10px;
+}
+
+.card-item {
+  position: relative;
+}
+
+.card-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -5px;
+  bottom: 4px;
+  width: 1px;
+  background: black;
+}
+
+.price {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.book-button {
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.card-price {
+  display: grid;
+  place-content: center;
+  background-color: hsl(214, 56%, 58%);
+  text-align: center;
+  padding: 20px;
+}
+
 .hover\:bg-blue-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -1303,28 +1359,8 @@ img {
     height: 2.25rem;
   }
 
-  .sm\:h-12 {
-    height: 3rem;
-  }
-
-  .sm\:max-w-\[400px\] {
-    max-width: 400px;
-  }
-
-  .sm\:max-w-\[600px\] {
-    max-width: 600px;
-  }
-
   .sm\:max-w-\[700px\] {
     max-width: 700px;
-  }
-
-  .sm\:max-w-\[1000px\] {
-    max-width: 1000px;
-  }
-
-  .sm\:max-w-\[1500px\] {
-    max-width: 1500px;
   }
 
   .sm\:grid-cols-3 {
